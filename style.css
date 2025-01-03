@@ -1,0 +1,31 @@
+#hero {
+    background: linear-gradient(to right, #e9b7ce, #d3f3f1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(157, 78, 221, 0.2);
+}
+
+
+.progress-bar {
+    background-color: #e9b7ce;
+}
+
+footer .bi{
+    color: #e9b7ce;
+}
+
+.btn{
+    background: #e9b7ce;
+    color: #eaf7f6;
+}
