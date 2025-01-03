@@ -1,19 +1,70 @@
-#hero {
-    background: linear-gradient(to right, #e9b7ce, #d3f3f1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+body{
+    color: rgb(131, 94, 125)
 }
 
+
+/* ----Hero ---- */
+#hero {
+    /* background: linear-gradient(to right, #ffcaf4, #e3e3e3); */
+    background: linear-gradient(to right, #eedae8, #cea7be);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+#hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#hero span {
+    color: rgb(131, 94, 125);
+}
+
+
+.cta a:hover {
+    background: rgba(211, 194, 208, 1);
+}
+
+.cta i {
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.cta i:hover{
+    color: rgb(131, 94, 125);
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* ---- About ----  */
+/* h2 {    
+    display: inline-block;
+    border-bottom: 5px solid black;
+    padding-bottom: 10px;
+} */
+
+#about ul{
+    list-style-type:circle ;
+}
+
+
+/*----  Skills ---- */
 #skills {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.card{
-    transition: transform 0.5s ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(157, 78, 221, 0.2);
 }
 
 
@@ -21,8 +72,19 @@
     background-color: #e9b7ce;
 }
 
+/* ---- Footer ---- */
 footer .bi{
     color: #e9b7ce;
+}
+
+/* ---- Projet ---- */
+.card{
+    transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(157, 78, 221, 0.2);
 }
 
 .btn{
