@@ -62,6 +62,7 @@ body{
 }
 
 
+
 /*----  Skills ---- */
 #skills {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1);
@@ -88,6 +89,11 @@ footer .bi{
 }
 
 .btn{
-    background: #e9b7ce;
-    color: #eaf7f6;
+    background:#cea7be;
+    color: #ffffff;
+}
+
+.btn:hover{
+    background: rgb(131, 94, 125);
+    color: #ffffff;
 }
