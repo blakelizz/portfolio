@@ -1,11 +1,12 @@
-body{
-    color: rgb(131, 94, 125);
+body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Cache les débordements horizontaux */
+    color: rgb(131, 94, 125);
 }
+
 .logo_nav{
-    width: 10%;
+    width: 21%;
     height: auto;
 }
 
@@ -18,7 +19,7 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #ffffff;
     min-height: 88vh;
-    padding: 200px;
+    padding-top: 200px;
 }
 
 #hero h1 {
@@ -50,7 +51,7 @@ body{
 }
 
 .cta i:hover{
-    color: rgb(131, 94, 125);
+    color: #835e7d;
 }
 
 .reseaux {
@@ -60,17 +61,20 @@ body{
     margin-top: 30px;
 }
 
-/* .scroll-link {
-    position: absolute;
-    bottom: 300px; /* Ajuste la position selon tes préférences 
-    right: 500px; /* Cela place le lien à droite 
-    font-size: 1.5rem; /* Ajuste la taille de l'icône si besoin 
-    color: #000; /* Choisis la couleur souhaitée 
-} */
+.scroll-link{
+    padding-top: 150px;
+    color: #835e7d;
+}
+
+.scroll-link-about{
+    margin-top: -130px;
+    color: #835e7d;
+}
 
   .svg-curve {
     width: 100%;
     height: auto;
+    display: block; 
   }
 
 
@@ -116,6 +120,7 @@ footer{
 
 footer .logo_footer{
     width: 30%;
+    justify-content: end;
 }
 
 footer p{
@@ -124,7 +129,7 @@ footer p{
 
 /* ---- Projet ---- */
 .card{
-    max-width: 400px;
+    max-width: 350px;
     min-height: 340px;
     transition: transform 0.5s ease-in-out;
 }
@@ -168,16 +173,40 @@ footer p{
 }
 
 @media (max-width: 480px) {
-
+    /* HERO */
     #hero{
-        width: 100%;
+        max-height: 90vh;
+        padding-top: 100px;
     }
+
     #hero h1 {
         font-size: 2rem;
     }
-
     #hero p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
+    }
+    #hero .scroll-link{
+        display: none;
+    }
+
+    /* ABOUT */
+
+    #about{
+        padding: 60px;
+    }
+
+    #about .scroll-link-about{
+        display: none;
+    }
+
+    /* SKILLS */
+    #skills{
+        box-shadow: none;
+    }
+
+    /* PROJETS */
+    #projects{
+        padding-bottom: 50px;
     }
 
     /* FOOTER */
