@@ -1,14 +1,24 @@
 body{
-    color: rgb(131, 94, 125)
+    color: rgb(131, 94, 125);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.logo_nav{
+    width: 10%;
+    height: auto;
 }
 
-
+.navbar{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+}
 /* ----Hero ---- */
 #hero {
-    /* background: linear-gradient(to right, #ffcaf4, #e3e3e3); */
     background: linear-gradient(to right, #eedae8, #cea7be);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: #ffffff;
+    min-height: 88vh;
+    padding: 200px;
 }
 
 #hero h1 {
@@ -50,17 +60,29 @@ body{
     margin-top: 30px;
 }
 
-/* ---- About ----  */
-/* h2 {    
-    display: inline-block;
-    border-bottom: 5px solid black;
-    padding-bottom: 10px;
+/* .scroll-link {
+    position: absolute;
+    bottom: 300px; /* Ajuste la position selon tes préférences 
+    right: 500px; /* Cela place le lien à droite 
+    font-size: 1.5rem; /* Ajuste la taille de l'icône si besoin 
+    color: #000; /* Choisis la couleur souhaitée 
 } */
+
+  .svg-curve {
+    width: 100%;
+    height: auto;
+  }
+
+
+/* ---- About ----  */
 
 #about ul{
     list-style-type:circle ;
 }
 
+#about img{
+    max-height: 350px;
+}
 
 
 /*----  Skills ---- */
@@ -68,27 +90,57 @@ body{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
 .progress-bar {
     background-color: #e9b7ce;
 }
 
+/* .box_skills{
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
 /* ---- Footer ---- */
 footer .bi{
-    color: #e9b7ce;
+    color: #ffffff;
+}
+
+footer .bi:hover{
+    color: rgb(131, 94, 125);
+}
+
+footer{
+    background: linear-gradient(to right, #eedae8, #cea7be);
+}
+
+footer .logo_footer{
+    width: 30%;
+}
+
+footer p{
+    color: #ffffff;
 }
 
 /* ---- Projet ---- */
 .card{
+    max-width: 400px;
+    min-height: 340px;
     transition: transform 0.5s ease-in-out;
+}
+
+.card a{
+    text-decoration: none;
+    color: #212529;
 }
 
 .card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(157, 78, 221, 0.2);
+    box-shadow: 0 10px 30px rgba(157, 78, 221, 0.2);
 }
 
-.btn{
+
+/* .btn{
     background:#cea7be;
     color: #ffffff;
 }
@@ -96,4 +148,43 @@ footer .bi{
 .btn:hover{
     background: rgb(131, 94, 125);
     color: #ffffff;
+} */
+
+.wordpress{
+    background-color: #127baa;
+    color: #ffffff;
+
+}
+
+.notion{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000 ;
+}
+
+.prochainement {
+    background-color: #e4dcae;
+    color: #7f8058;
+}
+
+@media (max-width: 480px) {
+
+    #hero{
+        width: 100%;
+    }
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    /* FOOTER */
+    footer {
+        text-align: center;
+    }
+    footer p{
+        margin-bottom: 20px;
+    }
 }
