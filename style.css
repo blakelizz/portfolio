@@ -40,7 +40,6 @@ body, html {
     color: rgb(131, 94, 125);
 }
 
-
 .cta a:hover {
     background: rgba(211, 194, 208, 1);
 }
@@ -67,25 +66,48 @@ body, html {
 }
 
 .scroll-link-about{
-    margin-top: -130px;
+    margin-top: -6.50%;
     color: #835e7d;
 }
 
-  .svg-curve {
+.scroll-link-skills{
+    margin-top: -4%;
+    color: #835e7d;
+}
+
+.scroll-link-projets{
+    margin-top: -14%;
+    color: #835e7d;
+}
+
+.svg-curve {
     width: 100%;
     height: auto;
     display: block; 
-  }
-
+}
 
 /* ---- About ----  */
 
-#about ul{
+.about ul{
     list-style-type:circle ;
 }
 
-#about img{
+.about img{
     max-height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.about .col:nth-child(2){
+    display: flex;
+    justify-content: center;
+
+}
+
+.progress-bar {
+    background-color: #e9b7ce;
 }
 
 
@@ -94,42 +116,23 @@ body, html {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.progress-bar {
-    background-color: #e9b7ce;
-}
 
-/* .box_skills{
-    background-color: #f4f4f4;
+.box_skills{
+    background-color: rgb(131, 94, 125, 0.8);
+    color: #ffffff;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-} */
-
-/* ---- Footer ---- */
-footer .bi{
-    color: #ffffff;
 }
 
-footer .bi:hover{
-    color: rgb(131, 94, 125);
-}
-
-footer{
-    background: linear-gradient(to right, #eedae8, #cea7be);
-}
-
-footer .logo_footer{
-    width: 30%;
-    justify-content: end;
-}
-
-footer p{
-    color: #ffffff;
-}
+.skills  .container  .row:nth-child(2),
+.skills  .container  .row:nth-child(3) {
+    display: flex;
+    justify-content: space-evenly;}
 
 /* ---- Projet ---- */
 .card{
-    max-width: 350px;
+    min-width: 400px;
     min-height: 340px;
     transition: transform 0.5s ease-in-out;
 }
@@ -172,6 +175,29 @@ footer p{
     color: #7f8058;
 }
 
+/* ---- Footer ---- */
+footer .bi{
+    color: #ffffff;
+}
+
+footer .bi:hover{
+    color: rgb(131, 94, 125);
+}
+
+footer{
+    background: linear-gradient(to right, #eedae8, #cea7be);
+}
+
+footer .logo_footer{
+    width: 30%;
+    justify-content: end;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+
 @media (max-width: 480px) {
     /* HERO */
     #hero{
@@ -205,7 +231,7 @@ footer p{
     }
 
     /* PROJETS */
-    #projects{
+    #projets{
         padding-bottom: 50px;
     }
 
